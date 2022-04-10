@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
+
+.main_container {
+  width: 100%;
+}
+
+.error_form {
+  font-size: 14px;
+  font-family: "Waiting for the Sunrise", cursive;
+  color: rgba($color: #fd0000, $alpha: 0.8);
+  font-weight: bold;
+}
+
+.top_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .bulbContainer {
+    z-index: 2;
+    position: absolute;
+    top: 260px;
+    .bulb {
+      width: 100%;
+      height: 500px;
+      @media only screen and (max-width: 555px) {
+        height: 450px;
+      }
+      @media only screen and (max-width: 425px) {
+        height: 430px;
+      }
+    }
+  }
+  .verified {
+    // position: absolute;
+    // top: 100px;
+    height: 80px;
+    opacity: 0.7;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    @media only screen and (max-width: 425px) {
+      height: 50px;
+      margin-bottom: 30px;
+      margin-top: 110px;
+    }
+  }
+  .title {
+    // position: absolute;
+    // top: 200px;
+    font-family: "Waiting for the Sunrise", cursive;
+    font-size: 40px;
+    color: black;
+    margin-bottom: 100px;
+    @media only screen and (max-width: 555px) {
+      font-size: 30px;
+    }
+    @media only screen and (max-width: 425px) {
+      font-size: 25px;
+    }
+    @media only screen and (max-width: 361px) {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .formBox:hover {
+    transform: scale(1.05);
+  }
+  .formContainer {
+    // position: absolute;
+    // top: 350px;
+    width: 100%;
+    z-index: 3;
+
+    .formBox {
+      margin: auto;
+      background-color: rgba($color: #000000, $alpha: 0.1);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      transition-duration: 1s;
+      transition-timing-function: ease-in;
+      transition-property: all;
+
+      input {
+        outline: none;
+        height: 30px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        font-family: "Shadows Into Light Two", cursive;
+        font-size: 15px;
+      }
+      .btn {
+        margin: auto;
+        width: 100px;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+.middle_container {
+  padding-bottom: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    .card1:hover {
+      transform: scale(1.1);
+    }
+    .card2:hover {
+      transform: scale(1.1);
+    }
+    .card3:hover {
+      transform: scale(1.1);
+    }
+    .card1 {
+      background-color: #ffeadb;
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in;
+      transition-property: all;
+      @media only screen and (max-width: 730px) {
+        margin-bottom: 20px;
+      }
+    }
+    .card2 {
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in;
+      transition-property: all;
+      background-color: #ffeadb;
+      @media only screen and (max-width: 730px) {
+        margin-bottom: 20px;
+      }
+    }
+    .card3 {
+      transition-duration: 0.5s;
+      transition-timing-function: ease-in;
+      transition-property: all;
+      background-color: #ffeadb;
+      @media only screen and (max-width: 1080px) {
+        margin-top: 50px;
+      }
+      @media only screen and (max-width: 730px) {
+        padding-bottom: 20px;
+        margin-top: 0px;
+      }
+    }
+    .text {
+      text-align: center;
+      font-family: "Shadows Into Light Two", cursive;
+      font-size: 20px;
+      font-weight: bold;
+      opacity: 0.7;
+    }
+    .description {
+      font-family: "Shadows Into Light Two", cursive;
+    }
+  }
+}
+
+.subject_details1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media only screen and (max-width: 1240px) {
+    margin-bottom: 0px;
+  }
+  .text_collection {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .image_cover {
+    max-width: 500px;
+    position: relative;
+    top: -30px;
+    @media only screen and (max-width: 1240px) {
+      top: 0px;
+    }
+    .learn_image {
+      width: 100%;
+    }
+  }
+  .text_content:hover {
+    transform: scale(1.1);
+  }
+  .text_content {
+    box-shadow: #000000 0px 0px 20px 0px;
+    max-width: 700px;
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    height: 100%;
+
+    .text_heading {
+      margin: 0px;
+      font-family: "Waiting for the Sunrise", cursive;
+      font-size: 40px;
+      color: black;
+      font-weight: bolder;
+    }
+    .text_para {
+      margin: 0px;
+      margin-top: 20px;
+      font-size: 20px;
+      color: black;
+      font-family: "Shadows Into Light Two", cursive;
+    }
+  }
+}
+
+.subject_details2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .text_collection {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .image_cover {
+    max-width: 500px;
+    position: relative;
+    top: -30px;
+    .learn_image {
+      width: 100%;
+    }
+    @media only screen and (max-width: 1240px) {
+      display: none;
+    }
+  }
+  .text_content:hover {
+    transform: scale(1.1);
+  }
+  .text_content {
+    box-shadow: #000000 0px 0px 20px 0px;
+    max-width: 700px;
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    height: 100%;
+    .text_heading {
+      margin: 0px;
+      font-family: "Waiting for the Sunrise", cursive;
+      font-size: 40px;
+      color: black;
+      font-weight: bolder;
+    }
+    .text_para {
+      margin: 0px;
+      margin-top: 20px;
+      font-size: 20px;
+      color: black;
+      font-family: "Shadows Into Light Two", cursive;
+    }
+  }
+}
+
+.subject_details3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media only screen and (max-width: 1240px) {
+    margin-bottom: 100px;
+  }
+  .text_collection {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .image_cover {
+    max-width: 500px;
+    position: relative;
+    top: -120px;
+    @media only screen and (max-width: 1240px) {
+      top: -50px;
+    }
+    .learn_image {
+      width: 100%;
+    }
+  }
+  .text_content:hover {
+    transform: scale(1.1);
+  }
+  .text_content {
+    box-shadow: #000000 0px 0px 20px 0px;
+    max-width: 700px;
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    height: 100%;
+    .text_heading {
+      margin: 0px;
+      font-family: "Waiting for the Sunrise", cursive;
+      font-size: 40px;
+      color: black;
+      font-weight: bolder;
+    }
+    .text_para {
+      margin: 0px;
+      margin-top: 20px;
+      font-size: 20px;
+      color: black;
+      font-family: "Shadows Into Light Two", cursive;
+    }
+  }
+}
+
+.subject_container {
+}
+
+.register_tab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 300px;
+  padding-top: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .switch_choose {
+    margin-bottom: 50px;
+  }
+  .register_teacher {
+    width: 100%;
+    z-index: 3;
+    .formBox:hover {
+      transform: scale(1.1);
+    }
+    .formContainer {
+      width: 100%;
+      .formBox {
+        margin: auto;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        input {
+          outline: none;
+          height: 30px;
+          margin-bottom: 15px;
+          border: none;
+          border-radius: 5px;
+          font-family: "Shadows Into Light Two", cursive;
+          font-size: 15px;
+        }
+        .btn {
+          margin: auto;
+          width: 100px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+  .register_student {
+    width: 100%;
+    z-index: 3;
+    .formBox:hover {
+      transform: scale(1.05);
+    }
+    .formContainer {
+      width: 100%;
+      .formBox {
+        margin: auto;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        input {
+          outline: none;
+          height: 30px;
+          margin-bottom: 15px;
+          border: none;
+          border-radius: 5px;
+          font-family: "Shadows Into Light Two", cursive;
+          font-size: 15px;
+        }
+        .btn {
+          margin: auto;
+          width: 100px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+
+.review_customers {
+  .review_details {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .text_content:hover {
+      transform: scale(1.1);
+    }
+    .text_collection {
+      flex-wrap: wrap;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .image_cover {
+      position: relative;
+      top: -40px;
+      max-width: 500px;
+      .learn_image {
+        width: 100%;
+      }
+    }
+
+    .text_content {
+      box-shadow: #000000 0px 0px 20px 0px;
+      max-width: 700px;
+      background-color: rgba($color: #ffffff, $alpha: 0.1);
+      padding: 100px;
+      border-radius: 10px;
+      height: 100%;
+      transition-duration: 1s;
+      transition-timing-function: ease-in;
+      transition-property: all;
+      @media only screen and (max-width: 500px) {
+        padding: 30px;
+      }
+      .text_heading {
+        margin: 0px;
+        font-family: "Waiting for the Sunrise", cursive;
+        font-size: 40px;
+        color: black;
+        font-weight: bolder;
+      }
+      .stars_cover {
+        display: flex;
+        flex-direction: row;
+      }
+      .image_star {
+        margin-top: 30px;
+        max-width: 50px;
+        margin-right: 10px;
+        .star_image {
+          width: 100%;
+        }
+      }
+      .text_para {
+        margin: 0px;
+        margin-top: 30px;
+        font-size: 20px;
+        color: black;
+        font-family: "Shadows Into Light Two", cursive;
+      }
+    }
+  }
+}
+
+.foot_box {
+  margin-top: 300px;
+  box-shadow: #000000 0px 0px 20px 0px;
+  background-color: rgba($color: #ffffff, $alpha: 0.1);
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 650px) {
+    height: 200px;
+  }
+
+  .social_meida {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .sm_cover:hover {
+      transform: scale(1.1);
+    }
+    .sm_cover {
+      max-width: 100px;
+      transition: all;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      @media only screen and (max-width: 650px) {
+        max-width: 50px;
+      }
+      .sm {
+        width: 100%;
+      }
+    }
+  }
+  .copyright {
+    font-size: 20px;
+    font-family: "Waiting for the Sunrise", cursive;
+    color: rgba($color: #000000, $alpha: 0.8);
+    font-weight: bold;
+    @media only screen and (max-width: 400px) {
+      font-size: 15px;
+    }
+    @media only screen and (max-width: 280px) {
+      font-size: 10px;
+    }
+  }
+}

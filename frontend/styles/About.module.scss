@@ -1,0 +1,196 @@
+.main_container {
+  .name {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    font-family: "Waiting for the Sunrise", cursive;
+    font-size: 40px;
+    font-weight: bold;
+    @media only screen and (max-width: 555px) {
+      font-size: 35px;
+    }
+    @media only screen and (max-width: 425px) {
+      font-size: 32px;
+    }
+    @media only screen and (max-width: 361px) {
+      font-size: 30px;
+    }
+  }
+  .logo_showcase {
+    position: relative;
+    top: 140px;
+    max-width: 200px;
+    margin: auto;
+    .logo {
+      width: 100%;
+    }
+  }
+  .contact_boxes {
+    position: relative;
+    top: 250px;
+    .subject_details1 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+      @media only screen and (max-width: 1240px) {
+        margin-bottom: 0px;
+      }
+      .text_collection {
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .image_cover {
+        max-width: 500px;
+        position: relative;
+        top: -30px;
+        @media only screen and (max-width: 1240px) {
+          top: 0px;
+        }
+        .learn_image {
+          width: 100%;
+        }
+      }
+      .text_content:hover {
+        transform: scale(1.1);
+      }
+      .text_content {
+        box-shadow: #000000 0px 0px 20px 0px;
+        max-width: 700px;
+        background-color: rgba($color: #ffffff, $alpha: 0.1);
+        padding: 40px;
+        border-radius: 10px;
+        height: 100%;
+        margin-top: 80px;
+
+        .text_heading {
+          margin: 0px;
+          font-family: "Waiting for the Sunrise", cursive;
+          font-size: 40px;
+          color: black;
+          font-weight: bolder;
+        }
+        .text_para {
+          margin: 0px;
+          margin-top: 20px;
+          font-size: 20px;
+          color: black;
+          font-family: "Shadows Into Light Two", cursive;
+        }
+      }
+    }
+
+    .subject_details2 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .text_collection {
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .image_cover {
+        max-width: 450px;
+        position: relative;
+        top: -60px;
+        .learn_image {
+          width: 100%;
+        }
+        @media only screen and (max-width: 1240px) {
+          display: none;
+        }
+      }
+      .text_content:hover {
+        transform: scale(1.1);
+      }
+      .text_content {
+        box-shadow: #000000 0px 0px 20px 0px;
+        max-width: 700px;
+        background-color: rgba($color: #ffffff, $alpha: 0.1);
+        padding: 40px;
+        border-radius: 10px;
+        height: 100%;
+        .text_heading {
+          margin: 0px;
+          font-family: "Waiting for the Sunrise", cursive;
+          font-size: 40px;
+          color: black;
+          font-weight: bolder;
+        }
+        .text_para {
+          margin: 0px;
+          margin-top: 20px;
+          font-size: 20px;
+          color: black;
+          font-family: "Shadows Into Light Two", cursive;
+        }
+      }
+    }
+  }
+}
+
+.foot_box {
+  margin-top: 300px;
+  box-shadow: #000000 0px 0px 20px 0px;
+  background-color: rgba($color: #ffffff, $alpha: 0.1);
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: 650px) {
+    height: 200px;
+  }
+
+  .social_meida {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .sm_cover:hover {
+      transform: scale(1.1);
+    }
+    .sm_cover {
+      max-width: 100px;
+      transition: all;
+      transition-duration: 1s;
+      transition-timing-function: ease-in-out;
+      @media only screen and (max-width: 650px) {
+        max-width: 50px;
+      }
+      .sm {
+        width: 100%;
+      }
+    }
+  }
+  .copyright {
+    font-size: 20px;
+    font-family: "Waiting for the Sunrise", cursive;
+    color: rgba($color: #000000, $alpha: 0.8);
+    font-weight: bold;
+    @media only screen and (max-width: 400px) {
+      font-size: 15px;
+    }
+    @media only screen and (max-width: 280px) {
+      font-size: 10px;
+    }
+  }
+}

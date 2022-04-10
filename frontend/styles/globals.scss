@@ -1,0 +1,37 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("../public/images/topBackground.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.MuiFormGroup-root {
+  .MuiTypography-root {
+    font-family: "Waiting for the Sunrise", cursive !important;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .css-1q36rmd-MuiStack-root {
+  }
+  .MuiSwitch-root {
+    // width: 80px;
+    // height: 20px;
+    .Mui-checked {
+      // transform: translateX(46px);
+    }
+    .MuiSwitch-switchBase {
+      .MuiSwitch-thumb {
+        // width: 30px;
+        // height: 16px;
+      }
+    }
+  }
+}
